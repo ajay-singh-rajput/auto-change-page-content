@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #25282E;
+}
+main{
+    border-top: 1px solid transparent;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    /* height: 10vh; */
+    /* background-color: black; */
+    padding: 0 4vmax;
+    top: 3%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    z-index: 99;
+    /* transform: rotateZ(10deg); */
+}
+
+.menu{
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-color: aliceblue;
+    color: #25282E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 3%;
+    cursor: pointer;
+    z-index: 2;
+    transition: all linear 0.3s;
+}
+menu{
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 3%;
+    /* top: 100%; */
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    transform-origin: top left;
+    transition: all linear 0.3s;
+}
+menu > div{
+    width: 40%;
+    height: 80%;
+    /* background-color: #25282E; */
+}
+
+.menuLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 4vmax;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+.menuRight{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5vmax;
+}
+.item{
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.item:hover{
+    color: black;
+}
+
+.opt{
+    position: relative;
+    width: fit-content;
+    font-family: sans-serif;
+    color: black;
+    font-size: 2vmax;
+    cursor: pointer;
+}
+.opt::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: all linear 0.3s;
+}
+
+.opt:hover::after{
+    width: 100%;
+}
+.line{
+    position: absolute;
+    width: 2px;
+    height: 40%;
+    background-color: black;
+    left: 45%;
+    top: 30%;
+}
+
+.page1{
+  width: 100%;
+  height: 99vh;
+  position: relative; 
+  overflow: hidden;
+}
+
+.photo{
+    background: url(https://media.istockphoto.com/id/1409751960/photo/young-businessman-using-digital-tablet-while-working-in-business-office.jpg?s=170667a&w=0&k=20&c=VtWMf90sXiv01IjWsnHUuQC4LVRK596Uiurlf4NRoDU=);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blurDiv{
+    width: 100%;
+    height: 100%;
+    
+    filter: blur(10px);
+}
+.color{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(220, 11%, 16%, 0.407);
+}
+.contentDiv{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.567);
+    display: flex;
+    align-items: end;
+    padding-bottom: 1.5vmax;
+    color: white;
+    font-family: sans-serif;
+}
+.p1h1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    transform: translateX(-20px);
+    margin-right: 10px;
+}
+.h1s1, .p1p1{
+    width: 50%;
+    font-size: 1.1vmax;
+    color: rgb(225, 225, 225);
+}
+.line2{
+    width: 2px;
+    height: 50px;
+    background-color: aliceblue;
+    position: absolute;
+    right: -5%;
+    top: 10%;
+}
+.count{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+    position: fixed;
+    left: 3%;
+    top: 0;
+    justify-content: space-evenly;
+    z-index: 999;
+    gap: 5vmax;
+    color: white;
+}
+.count > i{
+    border-radius: 50%;
+    transition: all ease 0.2s;
+
+}
